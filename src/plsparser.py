@@ -42,7 +42,8 @@ def playlist(pls_fp):
     Example: ('http://host/song.mp3', 'A Song Title', 210)
 
     Arguments:
-    pls_fp -- A file-like object with pls data.
+    pls_fp -- A file-like object with pls data (only the readLine
+              method is used).
 
     Exceptions:
     NotAPLSFileError if the file isn't recognized as a pls file.
